@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    <title>Alarm Clock</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+	<div class="container">
+		<!-- digital clock -->
+		<div class="clock"></div>
+
+		<!-- alarm --> 
+		<div class="alarm">
+			<input type="datetime-local" class="alarmTime hide">
+			<div class="setalarmButton">
+				<button type="button" onclick="setAlarm(this);" id="alarmButton"><span class="glyphiconglyphicon-time"></span> Set Alarm</button>                                                              
+			</div>
+		</div>                      
+		
+		<!-- buttons -->
+		<div id="selectButton" style="display:none;">
+			<button onclick="snoozeAlarm();" class="btnbtn-warning"><span class="glyphiconglyphicon-pause"></span> Snooze 5 minutes</button>
+			<button onclick="stopAlarm();" class="btnbtn-danger"><span class="glyphiconglyphicon-stop"></span> Stop Alarm</button>
+		</div>
+	</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+	
+	

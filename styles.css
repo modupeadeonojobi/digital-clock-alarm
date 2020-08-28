@@ -1,0 +1,54 @@
+body{
+    background: #333;
+}
+.container {
+    text-align: center
+}
+
+.clock{
+    font-size: 4em;
+    margin: 200px auto;
+    margin-bottom: 50px;
+    color: yellow;
+    font-family: arial;
+}
+
+.clock span{
+    padding: 20px;
+    background: #444;
+}
+
+#alarmButton {
+    font-size: 2em;
+    background-color: #444;
+    padding: 7px;
+    color: yellow;
+}
+
+@media (max-width: 37rem) {
+    .clock span{
+        padding: 3px;
+    }
+
+    .clock{
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .clock span{
+        padding: 10px;
+        background: #444;
+    }
+    
+     #alarmButton {
+        font-size: 1.5em;
+        padding: 3px;
+
+    } 
+
+}
+
+.hide {
+    display: none;
+}
+
